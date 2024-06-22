@@ -39,4 +39,7 @@ backup_files() {
 		zenity --info --title="Error" --text="Backup failed."
 	fi
 }
-show_menu
+zenity --info --title="Welcome to Auto_Backup tool !" --text="Click OK to continue to the main menu."
+if [[ $? -eq 0 ]]; then
+	show_menu
+fi
